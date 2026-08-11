@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -7,10 +6,10 @@
 
   <title>Khushi Kakani | Data Analytics & Business Intelligence</title>
 
-<meta
- name="description"
- content="Khushi Kakani — Data Analytics, Business Intelligence and AI professional."
-/>
+  <meta
+    name="description"
+    content="Khushi Kakani — Data Analytics, Business Intelligence, Machine Learning and AI professional."
+  />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -81,7 +80,7 @@
 
     .logo {
       font-family: "Playfair Display", serif;
-      font-size: 23px;
+      font-size: 22px;
       font-weight: 700;
       color: var(--navy);
     }
@@ -109,6 +108,7 @@
       min-height: 680px;
       display: flex;
       align-items: center;
+      text-align: center;
       background:
         radial-gradient(circle at 90% 15%, #fcecf2 0, transparent 25%),
         linear-gradient(180deg, #ffffff 0%, #fffafb 100%);
@@ -117,7 +117,6 @@
     .hero-content {
       max-width: 850px;
       margin: 0 auto;
-      text-align: center;
     }
 
     .eyebrow {
@@ -219,6 +218,13 @@
       color: var(--navy);
       font-size: 42px;
       margin-bottom: 45px;
+    }
+
+    .section-intro {
+      color: var(--muted);
+      max-width: 700px;
+      margin-top: -25px;
+      margin-bottom: 35px;
     }
 
     /* ABOUT */
@@ -395,34 +401,47 @@
 
     .project-actions {
       display: flex;
-      gap: 18px;
-      align-items: center;
+      gap: 10px;
       flex-wrap: wrap;
     }
 
     .details-btn {
-      border: none;
-      background: none;
-      padding: 0;
-      color: var(--pink);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 9px 15px;
+      border-radius: 7px;
+      border: 1px solid var(--border);
+      background: white;
+      color: var(--navy);
       font-family: "DM Sans", sans-serif;
-      font-size: 14px;
+      font-size: 13px;
       font-weight: 600;
       cursor: pointer;
+      transition: 0.25s ease;
     }
 
     .details-btn:hover {
-      text-decoration: underline;
+      border-color: var(--pink);
+      color: var(--pink);
     }
 
     .github-link {
-      color: var(--navy);
-      font-size: 14px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 9px 15px;
+      border-radius: 7px;
+      background: var(--navy);
+      color: white;
+      font-size: 13px;
       font-weight: 600;
+      transition: 0.25s ease;
     }
 
     .github-link:hover {
-      color: var(--pink);
+      transform: translateY(-2px);
+      background: #26334d;
     }
 
     .project-details {
@@ -439,7 +458,7 @@
     .project-details h4 {
       color: var(--navy);
       font-size: 14px;
-      margin: 18px 0 5px;
+      margin: 17px 0 5px;
     }
 
     .project-details h4:first-child {
@@ -447,6 +466,8 @@
     }
 
     .project-details p {
+      color: var(--muted);
+      font-size: 13px;
       margin-bottom: 10px;
     }
 
@@ -494,7 +515,7 @@
     .education-card h3 {
       color: var(--navy);
       font-size: 18px;
-      margin-bottom: 5px;
+      margin-bottom: 7px;
     }
 
     .education-card p {
@@ -569,12 +590,11 @@
         font-size: 18px;
       }
 
-      .project-actions {
-        gap: 12px;
+      .logo {
+        font-size: 22px;
       }
     }
   </style>
-
 </head>
 
 <body>
@@ -584,921 +604,913 @@
   <nav>
     <div class="container nav-inner">
 
-```
-  <a href="#home" class="logo">
-    Khushi<span>.</span>
-  </a>
+      <a href="#home" class="logo">
+        Khushi<span>.</span>
+      </a>
 
-  <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#education">Education</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
 
-</div>
-```
-
+    </div>
   </nav>
+
 
   <!-- HERO -->
 
   <section class="hero" id="home">
 
-```
-<div class="container">
+    <div class="container">
 
-  <div class="hero-content">
+      <div class="hero-content">
 
-    <div class="eyebrow">
-      Data Analytics • Business Intelligence • AI
+        <div class="eyebrow">
+          Data Analytics • Business Intelligence • AI
+        </div>
+
+        <h1>
+          Hi, I'm <span>Khushi</span> Kakani.
+        </h1>
+
+        <p class="hero-subtitle">
+          Turning data into insights, automation and better business decisions.
+        </p>
+
+        <p class="hero-description">
+          Data Analytics and Machine Learning professional with an MSc in Big Data
+          Analytics. I enjoy solving real-world business problems using Python,
+          SQL, Power BI, machine learning and automation.
+        </p>
+
+        <div class="buttons">
+
+          <a href="#projects" class="btn btn-primary">
+            View My Work
+          </a>
+
+          <a
+            href="mailto:kakanikhushi15@gmail.com"
+            class="btn btn-secondary"
+          >
+            Get In Touch
+          </a>
+
+        </div>
+
+      </div>
+
     </div>
-
-    <h1>
-      Hi, I'm <span>Khushi</span> Kakani.
-    </h1>
-
-    <p class="hero-subtitle">
-      Turning data into insights, automation and better business decisions.
-    </p>
-
-    <p class="hero-description">
-      Data Analytics and Machine Learning professional with an MSc in Big Data
-      Analytics. I enjoy solving real-world business problems using Python,
-      SQL, Power BI, machine learning and automation.
-    </p>
-
-    <div class="buttons">
-
-      <a href="#projects" class="btn btn-primary">
-        View My Work
-      </a>
-
-      <a
-        href="mailto:kakanikhushi15@gmail.com"
-        class="btn btn-secondary"
-      >
-        Get In Touch
-      </a>
-
-    </div>
-
-  </div>
-
-</div>
-```
 
   </section>
+
 
   <!-- ABOUT -->
 
   <section class="about" id="about">
 
-```
-<div class="container">
+    <div class="container">
 
-  <div class="section-label">
-    About Me
-  </div>
+      <div class="section-label">
+        About Me
+      </div>
 
-  <h2 class="section-title">
-    A data-driven problem solver.
-  </h2>
+      <h2 class="section-title">
+        A data-driven problem solver.
+      </h2>
 
-  <div class="about-grid">
+      <div class="about-grid">
 
-    <div class="about-text">
+        <div class="about-text">
 
-      <p>
-        I'm a Data Analytics and Machine Learning professional with an
-        MSc in Big Data Analytics from St. Xavier's College, Mumbai.
-      </p>
+          <p>
+            I'm a Data Analytics and Machine Learning professional with an
+            MSc in Big Data Analytics from St. Xavier's College, Mumbai.
+          </p>
 
-      <p>
-        My experience spans data preprocessing, exploratory data analysis,
-        SQL-based analysis, automation and machine learning workflows.
-        I enjoy working at the intersection of data, technology and
-        business problems.
-      </p>
+          <p>
+            My experience spans data preprocessing, exploratory data analysis,
+            SQL-based analysis, automation and machine learning workflows.
+            I enjoy working at the intersection of data, technology and
+            business problems.
+          </p>
 
-      <p>
-        I'm particularly interested in opportunities where I can combine
-        analytics with business understanding to turn complex data into
-        clear, actionable insights.
-      </p>
+          <p>
+            I'm particularly interested in opportunities where I can combine
+            analytics with business understanding to turn complex data into
+            clear, actionable insights.
+          </p>
+
+        </div>
+
+        <div class="highlight-box">
+
+          <h3>
+            What I work with
+          </h3>
+
+          <ul>
+            <li>Data Analytics & Business Intelligence</li>
+            <li>Python & SQL</li>
+            <li>Power BI & Data Visualization</li>
+            <li>Machine Learning</li>
+            <li>Process Automation</li>
+            <li>Exploratory Data Analysis</li>
+          </ul>
+
+        </div>
+
+      </div>
 
     </div>
-
-    <div class="highlight-box">
-
-      <h3>
-        What I work with
-      </h3>
-
-      <ul>
-        <li>Data Analytics & Business Intelligence</li>
-        <li>Python & SQL</li>
-        <li>Power BI & Data Visualization</li>
-        <li>Machine Learning</li>
-        <li>Process Automation</li>
-        <li>Exploratory Data Analysis</li>
-      </ul>
-
-    </div>
-
-  </div>
-
-</div>
-```
 
   </section>
+
 
   <!-- EXPERIENCE -->
 
   <section id="experience">
 
-```
-<div class="container">
+    <div class="container">
 
-  <div class="section-label">
-    Experience
-  </div>
-
-  <h2 class="section-title">
-    Where I've worked.
-  </h2>
-
-  <div class="timeline">
-
-
-    <div class="experience-card">
-
-      <div class="date">
-        Nov 2025 — Mar 2026
+      <div class="section-label">
+        Experience
       </div>
 
-      <h3>
-        Data Analyst Intern
-      </h3>
+      <h2 class="section-title">
+        Where I've worked.
+      </h2>
 
-      <div class="company">
-        AssetPlus Consulting
+      <div class="timeline">
+
+
+        <div class="experience-card">
+
+          <div class="date">
+            Nov 2025 — Mar 2026
+          </div>
+
+          <h3>
+            Data Analyst Intern
+          </h3>
+
+          <div class="company">
+            AssetPlus Consulting
+          </div>
+
+          <ul>
+
+            <li>
+              Automated GESCOM data labeling and preprocessing workflows
+              using Python and SQL for machine learning workflows.
+            </li>
+
+            <li>
+              Conducted exploratory data analysis (EDA) and feature
+              engineering to improve dataset quality and support model
+              development.
+            </li>
+
+            <li>
+              Assisted with machine learning model development and
+              evaluation using labeled datasets.
+            </li>
+
+          </ul>
+
+        </div>
+
+
+        <div class="experience-card">
+
+          <div class="date">
+            May 2025 — Jul 2025
+          </div>
+
+          <h3>
+            Data Analyst Intern
+          </h3>
+
+          <div class="company">
+            Kaara
+          </div>
+
+          <ul>
+
+            <li>
+              Wrote and optimized SQL queries to analyze and manage
+              business data efficiently.
+            </li>
+
+            <li>
+              Developed an automation chatbot using Microsoft Power
+              Automate to handle issue-based email responses.
+            </li>
+
+            <li>
+              Automated ticketing workflows by consolidating related
+              issues and improving operational efficiency.
+            </li>
+
+            <li>
+              Collaborated with team members to test and refine
+              automated processes.
+            </li>
+
+          </ul>
+
+        </div>
+
       </div>
-
-      <ul>
-
-        <li>
-          Automated GESCOM data labeling and preprocessing workflows
-          using Python and SQL for machine learning workflows.
-        </li>
-
-        <li>
-          Conducted exploratory data analysis (EDA) and feature
-          engineering to improve dataset quality and support model
-          development.
-        </li>
-
-        <li>
-          Assisted with machine learning model development and
-          evaluation using labeled datasets.
-        </li>
-
-      </ul>
 
     </div>
-
-
-    <div class="experience-card">
-
-      <div class="date">
-        May 2025 — Jul 2025
-      </div>
-
-      <h3>
-        Data Analyst Intern
-      </h3>
-
-      <div class="company">
-        Kaara
-      </div>
-
-      <ul>
-
-        <li>
-          Wrote and optimized SQL queries to analyze and manage
-          business data efficiently.
-        </li>
-
-        <li>
-          Developed an automation chatbot using Microsoft Power
-          Automate to handle issue-based email responses.
-        </li>
-
-        <li>
-          Automated ticketing workflows by consolidating related
-          issues and improving operational efficiency.
-        </li>
-
-        <li>
-          Collaborated with team members to test and refine
-          automated processes.
-        </li>
-
-      </ul>
-
-    </div>
-
-  </div>
-
-</div>
-```
 
   </section>
+
 
   <!-- PROJECTS -->
 
   <section class="projects" id="projects">
 
-```
-<div class="container">
+    <div class="container">
 
-  <div class="section-label">
-    Selected Work
-  </div>
-
-  <h2 class="section-title">
-    Projects
-  </h2>
-
-
-  <div class="project-grid">
-
-
-    <!-- PROJECT 01 -->
-
-    <div class="project-card">
-
-      <div class="project-number">
-        01
+      <div class="section-label">
+        Selected Work
       </div>
 
-      <h3>
-        Sectoral Credit Default & ECL Modelling
-      </h3>
+      <h2 class="section-title">
+        Projects
+      </h2>
 
-      <p>
-        Developed a credit risk prediction model using Indian loan
-        datasets and macroeconomic stress scenarios to explore
-        credit risk and expected credit loss modelling.
+      <p class="section-intro">
+        Projects where I apply analytics, machine learning and automation
+        to real-world problems.
       </p>
 
-      <div class="tech">
-        <span>Python</span>
-        <span>Pandas</span>
-        <span>Scikit-learn</span>
-        <span>Machine Learning</span>
-      </div>
 
-      <div class="project-actions">
+      <div class="project-grid">
 
-        <button
-          class="details-btn"
-          onclick="toggleProject('project1')"
-        >
-          View Details →
-        </button>
 
-        <!-- Replace this URL with the actual repository URL -->
-        <a
-          class="github-link"
-          href="https://github.com/khushikakani/YOUR-CREDIT-RISK-REPOSITORY"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          View Project on GitHub →
-        </a>
+        <!-- PROJECT 01 -->
 
-      </div>
+        <div class="project-card">
 
-      <div class="project-details" id="project1">
+          <div class="project-number">
+            01
+          </div>
 
-        <h4>
-          Problem
-        </h4>
+          <h3>
+            Sectoral Credit Default & ECL Modelling
+          </h3>
 
-        <p>
-          Credit risk analysis requires understanding borrower-level
-          characteristics alongside broader economic conditions.
-        </p>
+          <p>
+            Developed a credit risk prediction model using Indian loan
+            datasets and macroeconomic stress scenarios to explore
+            credit risk and expected credit loss modelling.
+          </p>
 
-        <h4>
-          Approach
-        </h4>
+          <div class="tech">
+            <span>Python</span>
+            <span>Pandas</span>
+            <span>Scikit-learn</span>
+            <span>Machine Learning</span>
+          </div>
 
-        <p>
-          Developed a machine-learning workflow using Indian loan
-          datasets, including data preparation, exploratory analysis,
-          feature engineering and model development. Macroeconomic
-          stress scenarios were incorporated to explore changes in
-          predicted credit risk.
-        </p>
+          <div class="project-actions">
 
-        <h4>
-          Tools Used
-        </h4>
+            <button
+              class="details-btn"
+              onclick="toggleProject('project1')"
+            >
+              View Details →
+            </button>
 
-        <p>
-          Python · Pandas · Scikit-learn · Matplotlib
-        </p>
+            <a
+              href="https://github.com/khushikakani"
+              target="_blank"
+              class="github-link"
+            >
+              View Project on GitHub →
+            </a>
 
-        <h4>
-          Key Learning
-        </h4>
+          </div>
 
-        <p>
-          Developed a stronger understanding of applying machine
-          learning to financial risk problems and interpreting
-          analytical outputs in a business context.
-        </p>
+          <div class="project-details" id="project1">
+
+            <h4>
+              Problem
+            </h4>
+
+            <p>
+              Credit risk analysis requires understanding borrower-level
+              characteristics alongside broader economic conditions.
+            </p>
+
+            <h4>
+              Approach
+            </h4>
+
+            <p>
+              Developed a machine-learning workflow using Indian loan
+              datasets, including data preparation, exploratory analysis,
+              feature engineering and model development. Macroeconomic
+              stress scenarios were incorporated to explore changes in
+              predicted credit risk.
+            </p>
+
+            <h4>
+              Tools Used
+            </h4>
+
+            <p>
+              Python · Pandas · Scikit-learn · Matplotlib
+            </p>
+
+            <h4>
+              Key Learning
+            </h4>
+
+            <p>
+              Developed a stronger understanding of applying machine
+              learning to financial risk problems and interpreting
+              analytical outputs in a business context.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- PROJECT 02 -->
+
+        <div class="project-card">
+
+          <div class="project-number">
+            02
+          </div>
+
+          <h3>
+            Retail Sales Dashboard
+          </h3>
+
+          <p>
+            Designed an interactive Power BI dashboard to analyze
+            sales performance, revenue trends and business KPIs.
+          </p>
+
+          <div class="tech">
+            <span>Power BI</span>
+            <span>Excel</span>
+            <span>Data Visualization</span>
+          </div>
+
+          <div class="project-actions">
+
+            <button
+              class="details-btn"
+              onclick="toggleProject('project2')"
+            >
+              View Details →
+            </button>
+
+            <a
+              href="https://github.com/khushikakani"
+              target="_blank"
+              class="github-link"
+            >
+              View Project on GitHub →
+            </a>
+
+          </div>
+
+          <div class="project-details" id="project2">
+
+            <h4>
+              Problem
+            </h4>
+
+            <p>
+              Business performance data can become difficult to interpret
+              when sales metrics and trends are spread across large datasets.
+            </p>
+
+            <h4>
+              Approach
+            </h4>
+
+            <p>
+              Built an interactive Power BI dashboard to organize sales
+              performance metrics, revenue trends and business KPIs into
+              an accessible visual reporting interface.
+            </p>
+
+            <h4>
+              Tools Used
+            </h4>
+
+            <p>
+              Power BI · Excel · Data Visualization
+            </p>
+
+            <h4>
+              Key Learning
+            </h4>
+
+            <p>
+              Learned how effective dashboard design can turn raw business
+              data into information that is easier to interpret and use
+              for decision-making.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- PROJECT 03 -->
+
+        <div class="project-card">
+
+          <div class="project-number">
+            03
+          </div>
+
+          <h3>
+            GESCOM Data Processing & ML Pipeline
+          </h3>
+
+          <p>
+            Automated data labeling and preprocessing using Python
+            and SQL to prepare datasets for machine learning workflows.
+          </p>
+
+          <div class="tech">
+            <span>Python</span>
+            <span>SQL</span>
+            <span>Pandas</span>
+            <span>EDA</span>
+          </div>
+
+          <div class="project-actions">
+
+            <button
+              class="details-btn"
+              onclick="toggleProject('project3')"
+            >
+              View Details →
+            </button>
+
+            <a
+              href="https://github.com/khushikakani"
+              target="_blank"
+              class="github-link"
+            >
+              View Project on GitHub →
+            </a>
+
+          </div>
+
+          <div class="project-details" id="project3">
+
+            <h4>
+              Problem
+            </h4>
+
+            <p>
+              Machine-learning workflows depend on clean, consistently
+              labeled datasets, while manual preprocessing can become
+              repetitive and time-consuming.
+            </p>
+
+            <h4>
+              Approach
+            </h4>
+
+            <p>
+              Automated GESCOM data labeling and preprocessing using
+              Python and SQL. Conducted exploratory data analysis and
+              feature engineering to improve dataset quality and prepare
+              data for model development.
+            </p>
+
+            <h4>
+              Tools Used
+            </h4>
+
+            <p>
+              Python · SQL · Pandas · EDA
+            </p>
+
+            <h4>
+              Key Learning
+            </h4>
+
+            <p>
+              Gained practical experience in preparing real-world data
+              for machine-learning workflows and understanding how data
+              quality affects downstream modelling.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- PROJECT 04 -->
+
+        <div class="project-card">
+
+          <div class="project-number">
+            04
+          </div>
+
+          <h3>
+            Email Automation Chatbot
+          </h3>
+
+          <p>
+            Developed an automated email-response and ticket
+            consolidation workflow using Microsoft Power Automate.
+          </p>
+
+          <div class="tech">
+            <span>Power Automate</span>
+            <span>Automation</span>
+            <span>Microsoft 365</span>
+          </div>
+
+          <div class="project-actions">
+
+            <button
+              class="details-btn"
+              onclick="toggleProject('project4')"
+            >
+              View Details →
+            </button>
+
+            <a
+              href="https://github.com/khushikakani"
+              target="_blank"
+              class="github-link"
+            >
+              View Project on GitHub →
+            </a>
+
+          </div>
+
+          <div class="project-details" id="project4">
+
+            <h4>
+              Problem
+            </h4>
+
+            <p>
+              Repetitive issue-based email handling and ticket creation
+              can consume time and create unnecessary manual work.
+            </p>
+
+            <h4>
+              Approach
+            </h4>
+
+            <p>
+              Developed an automated workflow using Microsoft Power
+              Automate to handle issue-based email responses and
+              consolidate related tickets into a more structured process.
+            </p>
+
+            <h4>
+              Tools Used
+            </h4>
+
+            <p>
+              Microsoft Power Automate · Automation · Workflow Design
+            </p>
+
+            <h4>
+              Key Learning
+            </h4>
+
+            <p>
+              Learned how low-code automation can streamline operational
+              processes and reduce repetitive manual tasks.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- PROJECT 05 -->
+
+        <div class="project-card">
+
+          <div class="project-number">
+            05
+          </div>
+
+          <h3>
+            Object Recognition using YOLOv8
+          </h3>
+
+          <p>
+            Built a multi-object detection system using YOLOv8,
+            implementing bounding boxes and confidence scoring.
+          </p>
+
+          <div class="tech">
+            <span>Python</span>
+            <span>YOLOv8</span>
+            <span>OpenCV</span>
+            <span>Computer Vision</span>
+          </div>
+
+          <div class="project-actions">
+
+            <button
+              class="details-btn"
+              onclick="toggleProject('project5')"
+            >
+              View Details →
+            </button>
+
+            <a
+              href="https://github.com/khushikakani"
+              target="_blank"
+              class="github-link"
+            >
+              View Project on GitHub →
+            </a>
+
+          </div>
+
+          <div class="project-details" id="project5">
+
+            <h4>
+              Problem
+            </h4>
+
+            <p>
+              Computer vision systems need to identify and localize
+              multiple objects within an image while providing confidence
+              estimates for predictions.
+            </p>
+
+            <h4>
+              Approach
+            </h4>
+
+            <p>
+              Built a multi-object detection system using YOLOv8,
+              implementing bounding boxes and confidence scoring to
+              identify objects within images.
+            </p>
+
+            <h4>
+              Tools Used
+            </h4>
+
+            <p>
+              Python · YOLOv8 · OpenCV
+            </p>
+
+            <h4>
+              Key Learning
+            </h4>
+
+            <p>
+              Developed practical experience with object detection,
+              computer vision pipelines and interpreting model predictions.
+            </p>
+
+          </div>
+
+        </div>
+
 
       </div>
 
     </div>
-
-
-    <!-- PROJECT 02 -->
-
-    <div class="project-card">
-
-      <div class="project-number">
-        02
-      </div>
-
-      <h3>
-        Retail Sales Dashboard
-      </h3>
-
-      <p>
-        Designed an interactive Power BI dashboard to analyze
-        sales performance, revenue trends and business KPIs.
-      </p>
-
-      <div class="tech">
-        <span>Power BI</span>
-        <span>Excel</span>
-        <span>Data Visualization</span>
-      </div>
-
-      <div class="project-actions">
-
-        <button
-          class="details-btn"
-          onclick="toggleProject('project2')"
-        >
-          View Details →
-        </button>
-
-        <!-- Replace this URL with the actual repository URL -->
-        <a
-          class="github-link"
-          href="https://github.com/khushikakani/YOUR-RETAIL-DASHBOARD-REPOSITORY"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          View Project on GitHub →
-        </a>
-
-      </div>
-
-      <div class="project-details" id="project2">
-
-        <h4>
-          Problem
-        </h4>
-
-        <p>
-          Business performance data can become difficult to interpret
-          when sales metrics and trends are spread across large datasets.
-        </p>
-
-        <h4>
-          Approach
-        </h4>
-
-        <p>
-          Built an interactive Power BI dashboard to organize sales
-          performance metrics, revenue trends and business KPIs into
-          an accessible visual reporting interface.
-        </p>
-
-        <h4>
-          Tools Used
-        </h4>
-
-        <p>
-          Power BI · Excel · Data Visualization
-        </p>
-
-        <h4>
-          Key Learning
-        </h4>
-
-        <p>
-          Learned how effective dashboard design can turn raw business
-          data into information that is easier to interpret and use
-          for decision-making.
-        </p>
-
-      </div>
-
-    </div>
-
-
-    <!-- PROJECT 03 -->
-
-    <div class="project-card">
-
-      <div class="project-number">
-        03
-      </div>
-
-      <h3>
-        GESCOM Data Processing & ML Pipeline
-      </h3>
-
-      <p>
-        Automated data labeling and preprocessing using Python
-        and SQL to prepare datasets for machine learning workflows.
-      </p>
-
-      <div class="tech">
-        <span>Python</span>
-        <span>SQL</span>
-        <span>Pandas</span>
-        <span>EDA</span>
-      </div>
-
-      <div class="project-actions">
-
-        <button
-          class="details-btn"
-          onclick="toggleProject('project3')"
-        >
-          View Details →
-        </button>
-
-        <!-- Replace this URL with the actual repository URL -->
-        <a
-          class="github-link"
-          href="https://github.com/khushikakani/YOUR-GESCOM-REPOSITORY"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          View Project on GitHub →
-        </a>
-
-      </div>
-
-      <div class="project-details" id="project3">
-
-        <h4>
-          Problem
-        </h4>
-
-        <p>
-          Machine-learning workflows depend on clean, consistently
-          labeled datasets, while manual preprocessing can become
-          repetitive and time-consuming.
-        </p>
-
-        <h4>
-          Approach
-        </h4>
-
-        <p>
-          Automated GESCOM data labeling and preprocessing using
-          Python and SQL. Conducted exploratory data analysis and
-          feature engineering to improve dataset quality and prepare
-          data for model development.
-        </p>
-
-        <h4>
-          Tools Used
-        </h4>
-
-        <p>
-          Python · SQL · Pandas · EDA
-        </p>
-
-        <h4>
-          Key Learning
-        </h4>
-
-        <p>
-          Gained practical experience in preparing real-world data
-          for machine-learning workflows and understanding how data
-          quality affects downstream modelling.
-        </p>
-
-      </div>
-
-    </div>
-
-
-    <!-- PROJECT 04 -->
-
-    <div class="project-card">
-
-      <div class="project-number">
-        04
-      </div>
-
-      <h3>
-        Email Automation Chatbot
-      </h3>
-
-      <p>
-        Developed an automated email-response and ticket
-        consolidation workflow using Microsoft Power Automate.
-      </p>
-
-      <div class="tech">
-        <span>Power Automate</span>
-        <span>Automation</span>
-        <span>Microsoft 365</span>
-      </div>
-
-      <div class="project-actions">
-
-        <button
-          class="details-btn"
-          onclick="toggleProject('project4')"
-        >
-          View Details →
-        </button>
-
-        <!-- Replace this URL with the actual repository URL -->
-        <a
-          class="github-link"
-          href="https://github.com/khushikakani/YOUR-EMAIL-AUTOMATION-REPOSITORY"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          View Project on GitHub →
-        </a>
-
-      </div>
-
-      <div class="project-details" id="project4">
-
-        <h4>
-          Problem
-        </h4>
-
-        <p>
-          Repetitive issue-based email handling and ticket creation
-          can consume time and create unnecessary manual work.
-        </p>
-
-        <h4>
-          Approach
-        </h4>
-
-        <p>
-          Developed an automated workflow using Microsoft Power Automate
-          to handle issue-based email responses and consolidate related
-          tickets into a more structured process.
-        </p>
-
-        <h4>
-          Tools Used
-        </h4>
-
-        <p>
-          Microsoft Power Automate · Automation · Workflow Design
-        </p>
-
-        <h4>
-          Key Learning
-        </h4>
-
-        <p>
-          Learned how low-code automation can streamline operational
-          processes and reduce repetitive manual tasks.
-        </p>
-
-      </div>
-
-    </div>
-
-
-    <!-- PROJECT 05 -->
-
-    <div class="project-card">
-
-      <div class="project-number">
-        05
-      </div>
-
-      <h3>
-        Object Recognition using YOLOv8
-      </h3>
-
-      <p>
-        Built a multi-object detection system using YOLOv8,
-        implementing bounding boxes and confidence scoring.
-      </p>
-
-      <div class="tech">
-        <span>Python</span>
-        <span>YOLOv8</span>
-        <span>OpenCV</span>
-      </div>
-
-      <div class="project-actions">
-
-        <button
-          class="details-btn"
-          onclick="toggleProject('project5')"
-        >
-          View Details →
-        </button>
-
-        <!-- Replace this URL with the actual repository URL -->
-        <a
-          class="github-link"
-          href="https://github.com/khushikakani/YOUR-YOLOV8-REPOSITORY"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          View Project on GitHub →
-        </a>
-
-      </div>
-
-      <div class="project-details" id="project5">
-
-        <h4>
-          Problem
-        </h4>
-
-        <p>
-          Computer vision systems need to identify and localize
-          multiple objects within an image while providing confidence
-          estimates for predictions.
-        </p>
-
-        <h4>
-          Approach
-        </h4>
-
-        <p>
-          Built a multi-object detection system using YOLOv8,
-          implementing bounding boxes and confidence scoring to
-          identify objects within images.
-        </p>
-
-        <h4>
-          Tools Used
-        </h4>
-
-        <p>
-          Python · YOLOv8 · OpenCV
-        </p>
-
-        <h4>
-          Key Learning
-        </h4>
-
-        <p>
-          Developed practical experience with object detection,
-          computer vision pipelines and interpreting model predictions.
-        </p>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</div>
-```
 
   </section>
+
 
   <!-- SKILLS -->
 
   <section id="skills">
 
-```
-<div class="container">
+    <div class="container">
 
-  <div class="section-label">
-    Toolkit
-  </div>
+      <div class="section-label">
+        Technical Skills
+      </div>
 
-  <h2 class="section-title">
-    Skills & technologies.
-  </h2>
+      <h2 class="section-title">
+        Skills & technologies.
+      </h2>
 
-  <div class="skills-grid">
+      <div class="skills-grid">
 
-    <span class="skill">Python</span>
-    <span class="skill">SQL</span>
-    <span class="skill">R</span>
+        <span class="skill">Python</span>
+        <span class="skill">SQL</span>
+        <span class="skill">R</span>
 
-    <span class="skill">Pandas</span>
-    <span class="skill">NumPy</span>
-    <span class="skill">Scikit-learn</span>
-    <span class="skill">OpenCV</span>
-    <span class="skill">YOLOv8</span>
-    <span class="skill">Supervised Learning</span>
-    <span class="skill">Unsupervised Learning</span>
+        <span class="skill">Pandas</span>
+        <span class="skill">NumPy</span>
+        <span class="skill">Scikit-learn</span>
+        <span class="skill">OpenCV</span>
+        <span class="skill">YOLOv8</span>
+        <span class="skill">Supervised Learning</span>
+        <span class="skill">Unsupervised Learning</span>
 
-    <span class="skill">Power BI</span>
-    <span class="skill">Data Visualization</span>
-    <span class="skill">Tableau</span>
-    <span class="skill">Exploratory Data Analysis (EDA)</span>
+        <span class="skill">Power BI</span>
+        <span class="skill">Data Visualization</span>
+        <span class="skill">Tableau</span>
+        <span class="skill">Exploratory Data Analysis</span>
+        <span class="skill">EDA</span>
 
-    <span class="skill">Microsoft Power Automate</span>
-    <span class="skill">Excel</span>
-    <span class="skill">Git</span>
+        <span class="skill">Microsoft Power Automate</span>
+        <span class="skill">Excel</span>
+        <span class="skill">Git</span>
 
-  </div>
+        <span class="skill">Machine Learning</span>
+        <span class="skill">Data Analysis</span>
 
-</div>
-```
+      </div>
+
+    </div>
 
   </section>
+
 
   <!-- EDUCATION -->
 
   <section class="education" id="education">
 
-```
-<div class="container">
+    <div class="container">
 
-  <div class="section-label">
-    Education
-  </div>
+      <div class="section-label">
+        Education
+      </div>
 
-  <h2 class="section-title">
-    Academic background.
-  </h2>
+      <h2 class="section-title">
+        Academic background.
+      </h2>
 
-  <div class="education-grid">
+      <div class="education-grid">
 
 
-    <div class="education-card">
+        <div class="education-card">
 
-      <h3>
-        MSc Big Data Analytics
-      </h3>
+          <h3>
+            MSc Big Data Analytics
+          </h3>
 
-      <p>
-        St. Xavier's College, Mumbai
-      </p>
+          <p>
+            St. Xavier's College, Mumbai
+          </p>
 
-      <p>
-        2024 — 2026 (Expected)
-      </p>
+          <p>
+            2024 — 2026 (Expected)
+          </p>
+
+        </div>
+
+
+        <div class="education-card">
+
+          <h3>
+            Foundation Level in BS Degree — Data Science
+          </h3>
+
+          <p>
+            Indian Institute of Technology Madras
+          </p>
+
+          <p>
+            2023 — 2025
+          </p>
+
+        </div>
+
+
+        <div class="education-card">
+
+          <h3>
+            Global Science Summer Programme
+          </h3>
+
+          <p>
+            National University of Singapore
+          </p>
+
+          <p>
+            June 2026 — July 2026
+          </p>
+
+        </div>
+
+
+        <div class="education-card">
+
+          <h3>
+            BSc Computer Science
+          </h3>
+
+          <p>
+            Science College, SRTMUN, Nanded
+          </p>
+
+          <p>
+            2020 — 2023
+          </p>
+
+        </div>
+
+
+      </div>
 
     </div>
-
-
-    <div class="education-card">
-
-      <h3>
-        Foundation Level in BS Degree — Data Science
-      </h3>
-
-      <p>
-        Indian Institute of Technology Madras
-      </p>
-
-      <p>
-        2023 — 2025 · Online Programme
-      </p>
-
-    </div>
-
-
-    <div class="education-card">
-
-      <h3>
-        Global Science Summer Programme
-      </h3>
-
-      <p>
-        National University of Singapore
-      </p>
-
-      <p>
-        June 2026 — July 2026
-      </p>
-
-    </div>
-
-
-    <div class="education-card">
-
-      <h3>
-        BSc Computer Science
-      </h3>
-
-      <p>
-        Science College, SRTMUN, Nanded
-      </p>
-
-      <p>
-        2020 — 2023
-      </p>
-
-    </div>
-
-  </div>
-
-</div>
-```
 
   </section>
+
 
   <!-- CONTACT -->
 
   <section class="contact" id="contact">
 
-```
-<div class="container">
+    <div class="container">
 
-  <div class="contact-content">
+      <div class="contact-content">
 
-    <div class="section-label">
-      Get In Touch
+        <div class="section-label">
+          Get In Touch
+        </div>
+
+        <h2 class="section-title">
+          Let's connect.
+        </h2>
+
+        <p>
+          I'm currently exploring opportunities in data analytics,
+          business intelligence, AI and data-driven business roles.
+          Feel free to reach out if you'd like to connect or discuss
+          opportunities.
+        </p>
+
+        <div class="contact-links">
+
+          <a
+            href="mailto:kakanikhushi15@gmail.com"
+            class="btn btn-primary"
+          >
+            Email Me
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/khushi-kakani15/"
+            target="_blank"
+            class="btn btn-secondary"
+          >
+            LinkedIn
+          </a>
+
+          <a
+            href="https://github.com/khushikakani"
+            target="_blank"
+            class="btn btn-secondary"
+          >
+            GitHub
+          </a>
+
+        </div>
+
+      </div>
+
     </div>
-
-    <h2 class="section-title">
-      Let's connect.
-    </h2>
-
-    <p>
-      I'm currently exploring opportunities in data analytics,
-      business intelligence, AI and data-driven business roles.
-      Feel free to reach out if you'd like to connect or discuss
-      opportunities.
-    </p>
-
-    <div class="contact-links">
-
-      <a
-        href="mailto:kakanikhushi15@gmail.com"
-        class="btn btn-primary"
-      >
-        Email Me
-      </a>
-
-      <a
-        href="https://www.linkedin.com/in/khushi-kakani15/"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="btn btn-secondary"
-      >
-        LinkedIn
-      </a>
-
-      <a
-        href="https://github.com/khushikakani"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="btn btn-secondary"
-      >
-        GitHub
-      </a>
-
-    </div>
-
-  </div>
-
-</div>
-```
 
   </section>
+
 
   <!-- FOOTER -->
 
   <footer>
 
-```
-<div class="container">
-  © 2026 Khushi Kakani · Data Analytics & Business Intelligence
-</div>
-```
+    <div class="container">
+      © 2026 Khushi Kakani · Data Analytics & Business Intelligence
+    </div>
 
   </footer>
 
+
   <script>
+
     function toggleProject(projectId) {
+
       const project = document.getElementById(projectId);
 
       if (project.classList.contains("active")) {
@@ -1506,7 +1518,9 @@
       } else {
         project.classList.add("active");
       }
+
     }
+
   </script>
 
 </body>
