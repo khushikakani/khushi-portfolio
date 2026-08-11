@@ -1,58 +1,1042 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Khushi Kakani | Data Analytics</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Khushi Kakani | Data Analytics & AI</title>
+
+    <meta name="description"
+          content="Khushi Kakani — Data Analytics, Business Intelligence and AI professional. Portfolio of analytics, machine learning, Power BI and automation projects.">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #0b0f19;
+            color: #f5f7fa;
+            line-height: 1.6;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        /* NAVBAR */
+
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(11, 15, 25, 0.92);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid #202636;
+        }
+
+        .nav-inner {
+            height: 70px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .logo span {
+            color: #7c8cff;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 28px;
+            list-style: none;
+            font-size: 14px;
+        }
+
+        .nav-links a {
+            color: #b9c0cf;
+            transition: 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: white;
+        }
+
+        /* HERO */
+
+        .hero {
+            min-height: 88vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .eyebrow {
+            color: #8c9aff;
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 18px;
+        }
+
+        h1 {
+            font-size: clamp(48px, 8vw, 82px);
+            line-height: 1.05;
+            margin-bottom: 20px;
+        }
+
+        h1 span {
+            color: #8c9aff;
+        }
+
+        .hero h2 {
+            font-size: clamp(22px, 4vw, 34px);
+            color: #d9deea;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+
+        .hero-description {
+            max-width: 680px;
+            color: #9ca5b5;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 12px 20px;
+            border-radius: 8px;
+            border: 1px solid #30384c;
+            font-weight: bold;
+            font-size: 14px;
+            transition: 0.2s;
+        }
+
+        .btn-primary {
+            background: #7c8cff;
+            color: white;
+            border-color: #7c8cff;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+
+        /* SECTIONS */
+
+        section {
+            padding: 90px 0;
+        }
+
+        .section-title {
+            font-size: 34px;
+            margin-bottom: 12px;
+        }
+
+        .section-subtitle {
+            color: #8992a3;
+            margin-bottom: 40px;
+        }
+
+        /* ABOUT */
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+        }
+
+        .about-text {
+            color: #aeb6c5;
+            font-size: 17px;
+        }
+
+        .highlight-box {
+            background: #111725;
+            border: 1px solid #252d40;
+            padding: 28px;
+            border-radius: 14px;
+        }
+
+        .highlight-box h3 {
+            margin-bottom: 15px;
+        }
+
+        .highlight-box p {
+            color: #9ca5b5;
+        }
+
+        /* PROJECTS */
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 22px;
+        }
+
+        .project-card {
+            background: #111725;
+            border: 1px solid #252d40;
+            border-radius: 14px;
+            padding: 28px;
+            transition: 0.25s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            border-color: #5664c8;
+        }
+
+        .project-number {
+            color: #7c8cff;
+            font-size: 13px;
+            font-weight: bold;
+            margin-bottom: 14px;
+        }
+
+        .project-card h3 {
+            font-size: 21px;
+            margin-bottom: 12px;
+        }
+
+        .project-card p {
+            color: #9ca5b5;
+            margin-bottom: 18px;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+
+        .tag {
+            background: #1a2131;
+            color: #b9c4ff;
+            border-radius: 5px;
+            padding: 5px 9px;
+            font-size: 12px;
+        }
+
+        .project-link {
+            color: #8c9aff;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        /* EXPERIENCE */
+
+        .timeline {
+            border-left: 2px solid #2b3346;
+            padding-left: 28px;
+        }
+
+        .timeline-item {
+            margin-bottom: 40px;
+        }
+
+        .timeline-item h3 {
+            font-size: 21px;
+        }
+
+        .timeline-company {
+            color: #8c9aff;
+            margin: 4px 0;
+            font-weight: bold;
+        }
+
+        .timeline-date {
+            color: #697386;
+            font-size: 13px;
+            margin-bottom: 10px;
+        }
+
+        .timeline-item p {
+            color: #9ca5b5;
+        }
+
+        /* SKILLS */
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .skill-box {
+            background: #111725;
+            border: 1px solid #252d40;
+            border-radius: 12px;
+            padding: 24px;
+        }
+
+        .skill-box h3 {
+            margin-bottom: 15px;
+        }
+
+        .skill-box p {
+            color: #9ca5b5;
+        }
+
+        /* EDUCATION */
+
+        .education-card {
+            background: #111725;
+            border: 1px solid #252d40;
+            padding: 28px;
+            border-radius: 14px;
+            margin-bottom: 18px;
+        }
+
+        .education-card h3 {
+            margin-bottom: 5px;
+        }
+
+        .education-card .school {
+            color: #8c9aff;
+            font-weight: bold;
+        }
+
+        .education-card .date {
+            color: #697386;
+            font-size: 13px;
+        }
+
+        /* CONTACT */
+
+        .contact {
+            text-align: center;
+        }
+
+        .contact p {
+            color: #9ca5b5;
+            max-width: 600px;
+            margin: 0 auto 28px;
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        /* FOOTER */
+
+        footer {
+            border-top: 1px solid #202636;
+            padding: 30px 0;
+            text-align: center;
+            color: #697386;
+            font-size: 13px;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 750px) {
+
+            .nav-links {
+                display: none;
+            }
+
+            .hero {
+                min-height: 75vh;
+            }
+
+            .about-grid,
+            .projects,
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 65px 0;
+            }
+
+            h1 {
+                font-size: 52px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-    <h1>Hi, I'm Khushi Kakani</h1>
+<!-- NAVIGATION -->
 
-    <h2>Data Analytics | Business Intelligence | AI</h2>
+<nav>
+    <div class="container nav-inner">
 
-    <p>
-        I use data, analytics and technology to solve real-world business problems.
-    </p>
+        <div class="logo">
+            Khushi<span>.</span>
+        </div>
 
-    <h2>About Me</h2>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
 
-    <p>
-        I'm a data analytics professional with an MSc in Big Data Analytics,
-        with experience in Python, SQL, Power BI, machine learning and automation.
-    </p>
+    </div>
+</nav>
 
-    <h2>Projects</h2>
 
-    <h3>Retail Sales Dashboard</h3>
-    <p>Interactive Power BI dashboard analyzing sales performance and revenue trends.</p>
+<!-- HERO -->
 
-    <h3>Sectoral Credit Default & ECL Modelling</h3>
-    <p>Credit risk modelling using Python, machine learning and Indian loan datasets.</p>
+<section class="hero">
 
-    <h3>GESCOM Data Processing & ML Pipeline</h3>
-    <p>Automated data preprocessing and labeling using Python and SQL.</p>
+    <div class="container hero-content">
 
-    <h3>Email Automation Chatbot</h3>
-    <p>Automated issue-based email responses and ticket consolidation using Power Automate.</p>
+        <div class="eyebrow">
+            Data Analytics • Business Intelligence • AI
+        </div>
 
-    <h2>Skills</h2>
+        <h1>
+            Hi, I'm <span>Khushi Kakani.</span>
+        </h1>
 
-    <p>
-        Python · SQL · Power BI · Excel · Pandas · NumPy · Scikit-learn ·
-        Machine Learning · Data Analysis · Power Automate
-    </p>
+        <h2>
+            Turning data into insights, decisions and impact.
+        </h2>
 
-    <h2>Contact</h2>
+        <p class="hero-description">
+            Data analytics professional with an MSc in Big Data Analytics,
+            experienced in Python, SQL, Power BI, machine learning and
+            process automation. I enjoy solving real-world business problems
+            through data and technology.
+        </p>
 
-    <p>
-        Email: kakanikhushi15@gmail.com
-    </p>
+        <div class="buttons">
 
-    <p>
-        <a href="https://www.linkedin.com/in/khushi-kakani15/">LinkedIn</a>
-        |
-        <a href="https://github.com/khushikakani">GitHub</a>
-    </p>
+            <a class="btn btn-primary"
+               href="#projects">
+                View My Work
+            </a>
+
+            <a class="btn"
+               href="mailto:kakanikhushi15@gmail.com">
+                Get In Touch
+            </a>
+
+            <a class="btn"
+               href="https://www.linkedin.com/in/khushi-kakani15/"
+               target="_blank">
+                LinkedIn
+            </a>
+
+            <a class="btn"
+               href="https://github.com/khushikakani"
+               target="_blank">
+                GitHub
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section id="about">
+
+    <div class="container">
+
+        <h2 class="section-title">
+            About Me
+        </h2>
+
+        <p class="section-subtitle">
+            A data-focused problem solver with an interest in analytics,
+            AI and business decision-making.
+        </p>
+
+        <div class="about-grid">
+
+            <div class="about-text">
+
+                <p>
+                    I'm a data analytics professional with an MSc in Big Data
+                    Analytics from St. Xavier's College, Mumbai.
+                </p>
+
+                <br>
+
+                <p>
+                    My experience spans data analysis, machine learning,
+                    automation and business analytics. I've worked with
+                    Python and SQL for data preparation and analysis, and
+                    Power BI and Excel for reporting and visualization.
+                </p>
+
+                <br>
+
+                <p>
+                    I'm particularly interested in roles where data,
+                    technology and business problems come together —
+                    including Business Intelligence, Data Analytics,
+                    Business Analytics and AI-driven solutions.
+                </p>
+
+            </div>
+
+
+            <div class="highlight-box">
+
+                <h3>What I enjoy working on</h3>
+
+                <p>
+                    • Business & Data Analytics
+                    <br><br>
+                    • Business Intelligence & Dashboards
+                    <br><br>
+                    • Machine Learning
+                    <br><br>
+                    • Data Automation
+                    <br><br>
+                    • AI-powered solutions
+                    <br><br>
+                    • Financial & Risk Analytics
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PROJECTS -->
+
+<section id="projects">
+
+    <div class="container">
+
+        <h2 class="section-title">
+            Selected Projects
+        </h2>
+
+        <p class="section-subtitle">
+            Projects where I apply analytics, machine learning and
+            automation to real-world problems.
+        </p>
+
+
+        <div class="projects">
+
+
+            <div class="project-card">
+
+                <div class="project-number">
+                    01 — BUSINESS INTELLIGENCE
+                </div>
+
+                <h3>
+                    Retail Sales Dashboard
+                </h3>
+
+                <p>
+                    Designed an interactive Power BI dashboard to analyze
+                    sales performance, revenue trends and business KPIs.
+                </p>
+
+                <div class="tags">
+                    <span class="tag">Power BI</span>
+                    <span class="tag">Excel</span>
+                    <span class="tag">Data Visualization</span>
+                </div>
+
+                <a class="project-link"
+                   href="https://github.com/khushikakani"
+                   target="_blank">
+                    View on GitHub →
+                </a>
+
+            </div>
+
+
+            <div class="project-card">
+
+                <div class="project-number">
+                    02 — FINANCIAL ANALYTICS
+                </div>
+
+                <h3>
+                    Sectoral Credit Default & ECL Modelling
+                </h3>
+
+                <p>
+                    Developed a credit-risk prediction model using Indian
+                    loan datasets and macroeconomic stress scenarios.
+                </p>
+
+                <div class="tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Pandas</span>
+                    <span class="tag">Scikit-learn</span>
+                    <span class="tag">Credit Risk</span>
+                </div>
+
+                <a class="project-link"
+                   href="https://github.com/khushikakani"
+                   target="_blank">
+                    View on GitHub →
+                </a>
+
+            </div>
+
+
+            <div class="project-card">
+
+                <div class="project-number">
+                    03 — DATA ENGINEERING
+                </div>
+
+                <h3>
+                    GESCOM Data Processing & ML Pipeline
+                </h3>
+
+                <p>
+                    Automated data preprocessing and labeling workflows
+                    using Python and SQL to support machine learning.
+                </p>
+
+                <div class="tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">SQL</span>
+                    <span class="tag">Data Processing</span>
+                    <span class="tag">ML</span>
+                </div>
+
+                <a class="project-link"
+                   href="https://github.com/khushikakani"
+                   target="_blank">
+                    View on GitHub →
+                </a>
+
+            </div>
+
+
+            <div class="project-card">
+
+                <div class="project-number">
+                    04 — AUTOMATION
+                </div>
+
+                <h3>
+                    Email Automation Chatbot
+                </h3>
+
+                <p>
+                    Built an automated workflow for issue-based email
+                    responses and ticket consolidation using Microsoft
+                    Power Automate.
+                </p>
+
+                <div class="tags">
+                    <span class="tag">Power Automate</span>
+                    <span class="tag">Automation</span>
+                    <span class="tag">Workflow</span>
+                </div>
+
+                <a class="project-link"
+                   href="https://github.com/khushikakani"
+                   target="_blank">
+                    View on GitHub →
+                </a>
+
+            </div>
+
+
+            <div class="project-card">
+
+                <div class="project-number">
+                    05 — COMPUTER VISION
+                </div>
+
+                <h3>
+                    Object Recognition using YOLOv8
+                </h3>
+
+                <p>
+                    Built a multi-object detection system using YOLOv8
+                    with bounding boxes and confidence scoring.
+                </p>
+
+                <div class="tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">YOLOv8</span>
+                    <span class="tag">OpenCV</span>
+                    <span class="tag">Computer Vision</span>
+                </div>
+
+                <a class="project-link"
+                   href="https://github.com/khushikakani"
+                   target="_blank">
+                    View on GitHub →
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- EXPERIENCE -->
+
+<section id="experience">
+
+    <div class="container">
+
+        <h2 class="section-title">
+            Experience
+        </h2>
+
+        <p class="section-subtitle">
+            Hands-on experience across data analytics, automation and
+            machine learning.
+        </p>
+
+
+        <div class="timeline">
+
+
+            <div class="timeline-item">
+
+                <h3>Data Analyst Intern</h3>
+
+                <div class="timeline-company">
+                    AssetPlus Consulting
+                </div>
+
+                <div class="timeline-date">
+                    Nov 2025 — Mar 2026
+                </div>
+
+                <p>
+                    Worked on data analytics and business problems using
+                    SQL and Python. Developed automation workflows and
+                    supported data-driven process improvements.
+                </p>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <h3>Data Analyst Intern</h3>
+
+                <div class="timeline-company">
+                    Kaara, Hyderabad
+                </div>
+
+                <div class="timeline-date">
+                    May 2025 — Jul 2025
+                </div>
+
+                <p>
+                    Automated data labeling and preprocessing workflows
+                    using Python and SQL. Conducted exploratory data
+                    analysis and feature engineering to support machine
+                    learning workflows.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- SKILLS -->
+
+<section id="skills">
+
+    <div class="container">
+
+        <h2 class="section-title">
+            Skills
+        </h2>
+
+        <p class="section-subtitle">
+            Tools and technologies I use across analytics and data projects.
+        </p>
+
+
+        <div class="skills-grid">
+
+
+            <div class="skill-box">
+
+                <h3>Programming & Data</h3>
+
+                <p>
+                    Python<br>
+                    SQL<br>
+                    R<br>
+                    Pandas<br>
+                    NumPy
+                </p>
+
+            </div>
+
+
+            <div class="skill-box">
+
+                <h3>Analytics & BI</h3>
+
+                <p>
+                    Power BI<br>
+                    Excel<br>
+                    Data Visualization<br>
+                    Exploratory Data Analysis<br>
+                    Business Analytics
+                </p>
+
+            </div>
+
+
+            <div class="skill-box">
+
+                <h3>Machine Learning</h3>
+
+                <p>
+                    Scikit-learn<br>
+                    Supervised Learning<br>
+                    Unsupervised Learning<br>
+                    Feature Engineering<br>
+                    Model Evaluation
+                </p>
+
+            </div>
+
+
+            <div class="skill-box">
+
+                <h3>Automation</h3>
+
+                <p>
+                    Microsoft Power Automate<br>
+                    Workflow Automation<br>
+                    Process Improvement
+                </p>
+
+            </div>
+
+
+            <div class="skill-box">
+
+                <h3>Other Technologies</h3>
+
+                <p>
+                    OpenCV<br>
+                    YOLOv8<br>
+                    Git<br>
+                    Machine Learning Pipelines
+                </p>
+
+            </div>
+
+
+            <div class="skill-box">
+
+                <h3>Business Skills</h3>
+
+                <p>
+                    Problem Solving<br>
+                    Stakeholder Communication<br>
+                    Data Storytelling<br>
+                    Analytical Thinking
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- EDUCATION -->
+
+<section id="education">
+
+    <div class="container">
+
+        <h2 class="section-title">
+            Education
+        </h2>
+
+
+        <div class="education-card">
+
+            <h3>
+                MSc Big Data Analytics
+            </h3>
+
+            <div class="school">
+                St. Xavier's College, Mumbai
+            </div>
+
+            <div class="date">
+                2024 — 2026
+            </div>
+
+        </div>
+
+
+        <div class="education-card">
+
+            <h3>
+                Foundation in Data Science
+            </h3>
+
+            <div class="school">
+                Indian Institute of Technology Madras
+            </div>
+
+            <div class="date">
+                2023 — 2025
+            </div>
+
+        </div>
+
+
+        <div class="education-card">
+
+            <h3>
+                BSc Computer Science
+            </h3>
+
+            <div class="school">
+                Science College, SRTMUN, Nanded
+            </div>
+
+            <div class="date">
+                2020 — 2023
+            </div>
+
+        </div>
+
+
+        <div class="education-card">
+
+            <h3>
+                Global Science Summer Programme
+            </h3>
+
+            <div class="school">
+                National University of Singapore
+            </div>
+
+            <div class="date">
+                June 2026 — July 2026
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section id="contact" class="contact">
+
+    <div class="container">
+
+        <h2 class="section-title">
+            Let's Connect
+        </h2>
+
+        <p>
+            I'm currently exploring opportunities in Data Analytics,
+            Business Intelligence, Business Analytics, AI and
+            finance-related analytics roles.
+        </p>
+
+
+        <div class="contact-links">
+
+            <a class="btn btn-primary"
+               href="mailto:kakanikhushi15@gmail.com">
+                Email Me
+            </a>
+
+            <a class="btn"
+               href="https://www.linkedin.com/in/khushi-kakani15/"
+               target="_blank">
+                LinkedIn
+            </a>
+
+            <a class="btn"
+               href="https://github.com/khushikakani"
+               target="_blank">
+                GitHub
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <div class="container">
+
+        © 2026 Khushi Kakani · Data Analytics & AI
+
+    </div>
+
+</footer>
 
 </body>
 </html>
