@@ -59,6 +59,8 @@
       margin: auto;
     }
 
+    /* NAVIGATION */
+
     nav {
       position: sticky;
       top: 0;
@@ -77,7 +79,7 @@
 
     .logo {
       font-family: "Playfair Display", serif;
-      font-size: 24px;
+      font-size: 25px;
       font-weight: 700;
       color: var(--navy);
     }
@@ -99,6 +101,8 @@
       color: var(--pink);
     }
 
+    /* HERO */
+
     .hero {
       min-height: 680px;
       display: flex;
@@ -110,8 +114,6 @@
 
     .hero-content {
       max-width: 850px;
-      margin: 0 auto;
-      text-align: center;
     }
 
     .eyebrow {
@@ -143,21 +145,20 @@
       font-size: 21px;
       color: var(--text);
       max-width: 700px;
-      margin: 0 auto 18px;
+      margin-bottom: 18px;
     }
 
     .hero-description {
       color: var(--muted);
       max-width: 650px;
       font-size: 16px;
-      margin: 0 auto 32px;
+      margin-bottom: 32px;
     }
 
     .buttons {
       display: flex;
       gap: 14px;
       flex-wrap: wrap;
-      justify-content: center;
     }
 
     .btn {
@@ -193,6 +194,8 @@
       transform: translateY(-2px);
     }
 
+    /* SECTIONS */
+
     section {
       padding: 100px 0;
     }
@@ -213,12 +216,7 @@
       margin-bottom: 45px;
     }
 
-    .section-intro {
-      color: var(--muted);
-      max-width: 700px;
-      margin-top: -25px;
-      margin-bottom: 35px;
-    }
+    /* ABOUT */
 
     .about {
       background: var(--off-white);
@@ -268,6 +266,8 @@
     .highlight-box li:last-child {
       border-bottom: none;
     }
+
+    /* EXPERIENCE */
 
     .timeline {
       max-width: 900px;
@@ -325,6 +325,8 @@
       margin-bottom: 8px;
     }
 
+    /* PROJECTS */
+
     .projects {
       background: var(--off-white);
     }
@@ -372,7 +374,6 @@
       display: flex;
       flex-wrap: wrap;
       gap: 7px;
-      margin-bottom: 22px;
     }
 
     .tech span,
@@ -388,63 +389,54 @@
 
     .project-actions {
       display: flex;
-      gap: 10px;
       flex-wrap: wrap;
+      gap: 12px;
       align-items: center;
+      margin-top: 22px;
     }
 
     .details-btn {
-      border: 1px solid var(--border);
-      background: white;
+      border: none;
+      background: none;
       color: var(--navy);
-      padding: 9px 14px;
-      border-radius: 7px;
       font-family: "DM Sans", sans-serif;
-      font-size: 13px;
+      font-size: 14px;
       font-weight: 600;
       cursor: pointer;
+      padding: 0;
       transition: 0.25s ease;
     }
 
     .details-btn:hover {
-      border-color: var(--pink);
       color: var(--pink);
-      transform: translateY(-2px);
     }
 
     .github-link {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 9px 14px;
-      border-radius: 7px;
-      background: var(--navy);
-      color: white;
-      font-size: 13px;
+      color: var(--pink);
+      font-size: 14px;
       font-weight: 600;
       transition: 0.25s ease;
     }
 
     .github-link:hover {
-      transform: translateY(-2px);
-      background: #26334d;
+      color: #a94d68;
     }
 
     .project-details {
       display: none;
-      margin-top: 24px;
+      margin-top: 25px;
       padding-top: 22px;
       border-top: 1px solid var(--border);
     }
 
-    .project-details.open {
+    .project-details.active {
       display: block;
     }
 
     .project-details h4 {
       color: var(--navy);
-      font-size: 14px;
-      margin: 15px 0 5px;
+      font-size: 15px;
+      margin: 18px 0 5px;
     }
 
     .project-details h4:first-child {
@@ -452,8 +444,10 @@
     }
 
     .project-details p {
-      margin-bottom: 10px;
+      margin-bottom: 12px;
     }
+
+    /* SKILLS */
 
     .skills-grid {
       display: flex;
@@ -474,6 +468,8 @@
       border-color: var(--pink);
       color: var(--pink);
     }
+
+    /* EDUCATION */
 
     .education {
       background: var(--off-white);
@@ -503,6 +499,8 @@
       font-size: 14px;
     }
 
+    /* CONTACT */
+
     .contact {
       text-align: center;
     }
@@ -524,6 +522,8 @@
       gap: 12px;
     }
 
+    /* FOOTER */
+
     footer {
       border-top: 1px solid var(--border);
       padding: 28px 0;
@@ -531,6 +531,8 @@
       color: var(--muted);
       font-size: 13px;
     }
+
+    /* MOBILE */
 
     @media (max-width: 750px) {
       .nav-links {
@@ -563,25 +565,20 @@
       .hero-subtitle {
         font-size: 18px;
       }
-
-      .project-actions {
-        flex-direction: column;
-        align-items: stretch;
-      }
-
-      .details-btn,
-      .github-link {
-        width: 100%;
-      }
     }
   </style>
 </head>
 
 <body>
 
+  <!-- NAVIGATION -->
+
   <nav>
     <div class="container nav-inner">
-      <a href="#home" class="logo">Khushi<span>.</span></a>
+
+      <a href="#home" class="logo">
+        Khushi<span>.</span>
+      </a>
 
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
@@ -591,12 +588,17 @@
         <li><a href="#education">Education</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+
     </div>
   </nav>
 
 
+  <!-- HERO -->
+
   <section class="hero" id="home">
+
     <div class="container">
+
       <div class="hero-content">
 
         <div class="eyebrow">
@@ -612,12 +614,13 @@
         </p>
 
         <p class="hero-description">
-          Data Analytics and Machine Learning professional with an MSc in Big
-          Data Analytics. I enjoy solving real-world business problems using
-          Python, SQL, Power BI, machine learning and automation.
+          Data Analytics and Machine Learning professional with an MSc in Big Data
+          Analytics. I enjoy solving real-world business problems using Python,
+          SQL, Power BI, machine learning and automation.
         </p>
 
         <div class="buttons">
+
           <a href="#projects" class="btn btn-primary">
             View My Work
           </a>
@@ -628,17 +631,25 @@
           >
             Get In Touch
           </a>
+
         </div>
 
       </div>
+
     </div>
+
   </section>
 
 
+  <!-- ABOUT -->
+
   <section class="about" id="about">
+
     <div class="container">
 
-      <div class="section-label">About Me</div>
+      <div class="section-label">
+        About Me
+      </div>
 
       <h2 class="section-title">
         A data-driven problem solver.
@@ -670,7 +681,9 @@
 
         <div class="highlight-box">
 
-          <h3>What I work with</h3>
+          <h3>
+            What I work with
+          </h3>
 
           <ul>
             <li>Data Analytics & Business Intelligence</li>
@@ -684,20 +697,28 @@
         </div>
 
       </div>
+
     </div>
+
   </section>
 
 
+  <!-- EXPERIENCE -->
+
   <section id="experience">
+
     <div class="container">
 
-      <div class="section-label">Experience</div>
+      <div class="section-label">
+        Experience
+      </div>
 
       <h2 class="section-title">
         Where I've worked.
       </h2>
 
       <div class="timeline">
+
 
         <div class="experience-card">
 
@@ -714,6 +735,7 @@
           </div>
 
           <ul>
+
             <li>
               Automated GESCOM data labeling and preprocessing workflows
               using Python and SQL for machine learning workflows.
@@ -729,6 +751,7 @@
               Assisted with machine learning model development and
               evaluation using labeled datasets.
             </li>
+
           </ul>
 
         </div>
@@ -749,6 +772,7 @@
           </div>
 
           <ul>
+
             <li>
               Wrote and optimized SQL queries to analyze and manage
               business data efficiently.
@@ -768,16 +792,22 @@
               Collaborated with team members to test and refine
               automated processes.
             </li>
+
           </ul>
 
         </div>
 
       </div>
+
     </div>
+
   </section>
 
 
+  <!-- PROJECTS -->
+
   <section class="projects" id="projects">
+
     <div class="container">
 
       <div class="section-label">
@@ -788,15 +818,10 @@
         Projects
       </h2>
 
-      <p class="section-intro">
-        Projects where I apply analytics, machine learning and automation
-        to real-world problems.
-      </p>
-
       <div class="project-grid">
 
 
-        <!-- PROJECT 01 — GITHUB -->
+        <!-- PROJECT 01 -->
 
         <div class="project-card">
 
@@ -843,33 +868,43 @@
 
           <div class="project-details" id="project1">
 
-            <h4>Problem</h4>
+            <h4>
+              Problem
+            </h4>
 
             <p>
               Credit risk analysis requires understanding borrower-level
               characteristics alongside broader economic conditions.
             </p>
 
-            <h4>Approach</h4>
+            <h4>
+              Approach
+            </h4>
 
             <p>
-              Developed an end-to-end credit risk assessment framework
-              using machine learning, stress testing and Expected Credit
-              Loss (ECL) modelling.
+              Developed a machine-learning workflow using Indian loan
+              datasets, including data preparation, exploratory analysis,
+              feature engineering and model development. Macroeconomic
+              stress scenarios were incorporated to explore changes in
+              predicted credit risk.
             </p>
 
-            <h4>Tools Used</h4>
+            <h4>
+              Tools Used
+            </h4>
 
             <p>
-              Python · Pandas · Scikit-learn · Machine Learning
+              Python · Pandas · Scikit-learn · Matplotlib
             </p>
 
-            <h4>Key Learning</h4>
+            <h4>
+              Key Learning
+            </h4>
 
             <p>
               Developed a stronger understanding of applying machine
-              learning and stress testing techniques to financial risk
-              problems.
+              learning to financial risk problems and interpreting
+              analytical outputs in a business context.
             </p>
 
           </div>
@@ -877,7 +912,7 @@
         </div>
 
 
-        <!-- PROJECT 02 — NOT CURRENTLY ON GITHUB -->
+        <!-- PROJECT 02 -->
 
         <div class="project-card">
 
@@ -913,34 +948,41 @@
 
           <div class="project-details" id="project2">
 
-            <h4>Problem</h4>
+            <h4>
+              Problem
+            </h4>
 
             <p>
               Business performance data can become difficult to interpret
-              when sales metrics and trends are spread across large
-              datasets.
+              when sales metrics and trends are spread across large datasets.
             </p>
 
-            <h4>Approach</h4>
+            <h4>
+              Approach
+            </h4>
 
             <p>
-              Designed an interactive Power BI dashboard to organize
-              sales performance metrics, revenue trends and business
-              KPIs into an accessible visual reporting interface.
+              Built an interactive Power BI dashboard to organize sales
+              performance metrics, revenue trends and business KPIs into
+              an accessible visual reporting interface.
             </p>
 
-            <h4>Tools Used</h4>
+            <h4>
+              Tools Used
+            </h4>
 
             <p>
               Power BI · Excel · Data Visualization
             </p>
 
-            <h4>Key Learning</h4>
+            <h4>
+              Key Learning
+            </h4>
 
             <p>
-              Learned how effective dashboard design can turn raw
-              business data into information that is easier to interpret
-              and use for decision-making.
+              Learned how effective dashboard design can turn raw business
+              data into information that is easier to interpret and use
+              for decision-making.
             </p>
 
           </div>
@@ -948,7 +990,7 @@
         </div>
 
 
-        <!-- PROJECT 03 — NOT CURRENTLY ON GITHUB -->
+        <!-- PROJECT 03 -->
 
         <div class="project-card">
 
@@ -985,7 +1027,9 @@
 
           <div class="project-details" id="project3">
 
-            <h4>Problem</h4>
+            <h4>
+              Problem
+            </h4>
 
             <p>
               Machine-learning workflows depend on clean, consistently
@@ -993,7 +1037,9 @@
               repetitive and time-consuming.
             </p>
 
-            <h4>Approach</h4>
+            <h4>
+              Approach
+            </h4>
 
             <p>
               Automated GESCOM data labeling and preprocessing using
@@ -1002,13 +1048,17 @@
               data for model development.
             </p>
 
-            <h4>Tools Used</h4>
+            <h4>
+              Tools Used
+            </h4>
 
             <p>
               Python · SQL · Pandas · EDA
             </p>
 
-            <h4>Key Learning</h4>
+            <h4>
+              Key Learning
+            </h4>
 
             <p>
               Gained practical experience in preparing real-world data
@@ -1021,7 +1071,7 @@
         </div>
 
 
-        <!-- PROJECT 04 — NOT CURRENTLY ON GITHUB -->
+        <!-- PROJECT 04 -->
 
         <div class="project-card">
 
@@ -1057,28 +1107,36 @@
 
           <div class="project-details" id="project4">
 
-            <h4>Problem</h4>
+            <h4>
+              Problem
+            </h4>
 
             <p>
               Repetitive issue-based email handling and ticket creation
               can consume time and create unnecessary manual work.
             </p>
 
-            <h4>Approach</h4>
+            <h4>
+              Approach
+            </h4>
 
             <p>
-              Developed an automated workflow using Microsoft Power
-              Automate to handle issue-based email responses and
-              consolidate related tickets into a structured process.
+              Developed an automated workflow using Microsoft Power Automate
+              to handle issue-based email responses and consolidate related
+              tickets into a more structured process.
             </p>
 
-            <h4>Tools Used</h4>
+            <h4>
+              Tools Used
+            </h4>
 
             <p>
-              Microsoft Power Automate · Automation · Microsoft 365
+              Microsoft Power Automate · Automation · Workflow Design
             </p>
 
-            <h4>Key Learning</h4>
+            <h4>
+              Key Learning
+            </h4>
 
             <p>
               Learned how low-code automation can streamline operational
@@ -1090,7 +1148,7 @@
         </div>
 
 
-        <!-- PROJECT 05 — GITHUB -->
+        <!-- PROJECT 05 -->
 
         <div class="project-card">
 
@@ -1111,7 +1169,6 @@
             <span>Python</span>
             <span>YOLOv8</span>
             <span>OpenCV</span>
-            <span>Computer Vision</span>
           </div>
 
           <div class="project-actions">
@@ -1136,7 +1193,9 @@
 
           <div class="project-details" id="project5">
 
-            <h4>Problem</h4>
+            <h4>
+              Problem
+            </h4>
 
             <p>
               Computer vision systems need to identify and localize
@@ -1144,7 +1203,9 @@
               estimates for predictions.
             </p>
 
-            <h4>Approach</h4>
+            <h4>
+              Approach
+            </h4>
 
             <p>
               Built a multi-object detection system using YOLOv8,
@@ -1152,13 +1213,17 @@
               identify objects within images.
             </p>
 
-            <h4>Tools Used</h4>
+            <h4>
+              Tools Used
+            </h4>
 
             <p>
-              Python · YOLOv8 · OpenCV · Computer Vision
+              Python · YOLOv8 · OpenCV
             </p>
 
-            <h4>Key Learning</h4>
+            <h4>
+              Key Learning
+            </h4>
 
             <p>
               Developed practical experience with object detection,
@@ -1169,253 +1234,17 @@
 
         </div>
 
-
-        <!-- GITHUB PROJECT 06 -->
-
-        <div class="project-card">
-
-          <div class="project-number">
-            06
-          </div>
-
-          <h3>
-            Email Spam Detection
-          </h3>
-
-          <p>
-            Built a machine learning classification workflow to identify
-            spam emails using data science and predictive modelling
-            techniques.
-          </p>
-
-          <div class="tech">
-            <span>Python</span>
-            <span>Machine Learning</span>
-            <span>Data Science</span>
-            <span>Jupyter Notebook</span>
-          </div>
-
-          <div class="project-actions">
-
-            <button
-              class="details-btn"
-              onclick="toggleProject('project6')"
-            >
-              View Details →
-            </button>
-
-            <a
-              class="github-link"
-              href="https://github.com/khushikakani/email-spam-detection"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              View Project on GitHub →
-            </a>
-
-          </div>
-
-          <div class="project-details" id="project6">
-
-            <h4>Problem</h4>
-
-            <p>
-              Email systems need reliable methods for distinguishing
-              unwanted spam messages from legitimate communication.
-            </p>
-
-            <h4>Approach</h4>
-
-            <p>
-              Developed an email spam detection workflow using machine
-              learning and data science techniques to classify email
-              messages.
-            </p>
-
-            <h4>Tools Used</h4>
-
-            <p>
-              Python · Machine Learning · Data Science · Jupyter Notebook
-            </p>
-
-            <h4>Key Learning</h4>
-
-            <p>
-              Strengthened practical understanding of classification
-              workflows and applying machine learning to text-based
-              problems.
-            </p>
-
-          </div>
-
-        </div>
-
-
-        <!-- GITHUB PROJECT 07 -->
-
-        <div class="project-card">
-
-          <div class="project-number">
-            07
-          </div>
-
-          <h3>
-            Student Performance Analysis
-          </h3>
-
-          <p>
-            Analyzed student performance using Python, statistical
-            hypothesis testing and Tableau visualizations.
-          </p>
-
-          <div class="tech">
-            <span>Python</span>
-            <span>Statistics</span>
-            <span>Tableau</span>
-            <span>Data Analysis</span>
-          </div>
-
-          <div class="project-actions">
-
-            <button
-              class="details-btn"
-              onclick="toggleProject('project7')"
-            >
-              View Details →
-            </button>
-
-            <a
-              class="github-link"
-              href="https://github.com/khushikakani/student-performance-analysis-python-tableau"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              View Project on GitHub →
-            </a>
-
-          </div>
-
-          <div class="project-details" id="project7">
-
-            <h4>Problem</h4>
-
-            <p>
-              Student performance data can reveal meaningful patterns
-              when analyzed through statistical methods and visual
-              exploration.
-            </p>
-
-            <h4>Approach</h4>
-
-            <p>
-              Conducted student performance analysis using Python,
-              statistical hypothesis testing and Tableau visualizations
-              to explore relationships and patterns in the data.
-            </p>
-
-            <h4>Tools Used</h4>
-
-            <p>
-              Python · Statistical Analysis · Tableau · Data Visualization
-            </p>
-
-            <h4>Key Learning</h4>
-
-            <p>
-              Strengthened understanding of statistical reasoning,
-              exploratory analysis and communicating findings through
-              interactive visualizations.
-            </p>
-
-          </div>
-
-        </div>
-
-
-        <!-- GITHUB PROJECT 08 -->
-
-        <div class="project-card">
-
-          <div class="project-number">
-            08
-          </div>
-
-          <h3>
-            Object Recognition Project
-          </h3>
-
-          <p>
-            Deep learning-based object recognition and detection project
-            using computer vision techniques.
-          </p>
-
-          <div class="tech">
-            <span>Python</span>
-            <span>Deep Learning</span>
-            <span>Computer Vision</span>
-            <span>Jupyter Notebook</span>
-          </div>
-
-          <div class="project-actions">
-
-            <button
-              class="details-btn"
-              onclick="toggleProject('project8')"
-            >
-              View Details →
-            </button>
-
-            <a
-              class="github-link"
-              href="https://github.com/khushikakani/object-recognition-project"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              View Project on GitHub →
-            </a>
-
-          </div>
-
-          <div class="project-details" id="project8">
-
-            <h4>Problem</h4>
-
-            <p>
-              Object recognition requires computer vision models to
-              identify and detect objects within visual data.
-            </p>
-
-            <h4>Approach</h4>
-
-            <p>
-              Developed a deep learning-based object recognition and
-              detection project using computer vision techniques as
-              part of an academic assignment.
-            </p>
-
-            <h4>Tools Used</h4>
-
-            <p>
-              Python · Deep Learning · Computer Vision · Jupyter Notebook
-            </p>
-
-            <h4>Key Learning</h4>
-
-            <p>
-              Gained practical exposure to deep learning and computer
-              vision workflows for object recognition and detection.
-            </p>
-
-          </div>
-
-        </div>
-
       </div>
+
     </div>
+
   </section>
 
 
+  <!-- SKILLS -->
+
   <section id="skills">
+
     <div class="container">
 
       <div class="section-label">
@@ -1449,17 +1278,17 @@
         <span class="skill">Excel</span>
         <span class="skill">Git</span>
 
-        <span class="skill">Machine Learning</span>
-        <span class="skill">Data Analysis</span>
-        <span class="skill">Business Intelligence</span>
-
       </div>
 
     </div>
+
   </section>
 
 
+  <!-- EDUCATION -->
+
   <section class="education" id="education">
+
     <div class="container">
 
       <div class="section-label">
@@ -1472,61 +1301,85 @@
 
       <div class="education-grid">
 
+
         <div class="education-card">
+
           <h3>
             MSc Big Data Analytics
           </h3>
+
           <p>
             St. Xavier's College, Mumbai
           </p>
+
           <p>
             2024 — 2026 (Expected)
           </p>
+
         </div>
 
+
         <div class="education-card">
+
           <h3>
-            Foundation in Data Science
+            Foundation Level in BS Degree — Data Science
           </h3>
+
           <p>
             Indian Institute of Technology Madras
           </p>
+
           <p>
-            Online Programme
+            2023 — 2025 · Online Programme
           </p>
+
         </div>
 
+
         <div class="education-card">
+
           <h3>
             Global Science Summer Programme
           </h3>
+
           <p>
             National University of Singapore
           </p>
+
           <p>
             June 2026 — July 2026
           </p>
+
         </div>
 
+
         <div class="education-card">
+
           <h3>
             BSc Computer Science
           </h3>
+
           <p>
             Science College, SRTMUN, Nanded
           </p>
+
           <p>
             2020 — 2023
           </p>
+
         </div>
 
       </div>
 
     </div>
+
   </section>
 
 
+  <!-- CONTACT -->
+
   <section class="contact" id="contact">
+
     <div class="container">
 
       <div class="contact-content">
@@ -1578,13 +1431,18 @@
       </div>
 
     </div>
+
   </section>
 
 
+  <!-- FOOTER -->
+
   <footer>
+
     <div class="container">
       © 2026 Khushi Kakani · Data Analytics & Business Intelligence
     </div>
+
   </footer>
 
 
@@ -1592,10 +1450,10 @@
     function toggleProject(projectId) {
       const project = document.getElementById(projectId);
 
-      if (project.classList.contains("open")) {
-        project.classList.remove("open");
+      if (project.classList.contains("active")) {
+        project.classList.remove("active");
       } else {
-        project.classList.add("open");
+        project.classList.add("active");
       }
     }
   </script>
